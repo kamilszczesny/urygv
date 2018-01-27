@@ -1,0 +1,23 @@
+{
+  "name": "uryga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "lazysizes": "^4.0.1",
+    "sass": "^1.0.0-beta.4",
+    "cachebust": "^2.3.0",
+    "gulp-cache-bust": "^1.3.0"
+  },
+  "devDependencies": {
+    
+  }
+}
