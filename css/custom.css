@@ -6130,8 +6130,8 @@ a.text-body-bg:hover, a.text-body-bg:focus {
     border: 1px solid #ddd !important; } }
 
 .logo {
-  padding-top: 20pt;
-  padding-bottom: 20pt; }
+  padding-top: 5pt;
+  padding-bottom: 10pt; }
 
 a.active {
   color: #629BDD;
@@ -6145,27 +6145,35 @@ a.active {
   background-color: white; }
 
 .contact-top {
-  background-color: #53BBFF; }
+  background-color: #02B8BF;
+  padding: 10px 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+  text-align: center; }
 
 h3 {
   padding-top: 1.5rem;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem; }
 
 .contactData {
   color: white;
   font-size: 0.9rem;
   font-weight: 400; }
 
-.contactData:first-child {
-  padding-right: 20px; }
+.phoneNumber {
+  clear: both; }
 
 .contactHeader {
   font-size: 0.8rem; }
 
-.contactContainer {
+.contactContainerBottom {
   margin-top: auto;
   margin-bottom: auto;
-  padding-left: 30px; }
+  padding-left: 30px;
+  padding-top: 30px; }
 
 .drName {
   font-size: 1.3rem;
@@ -6175,18 +6183,113 @@ h3 {
 .darkSection {
   background-color: #125F89; }
 
+.greenSection {
+  background-color: #02B8BF;
+  margin-top: 40px; }
+
+.greenSection h2 {
+  color: white; }
+
 .darkSection p {
+  color: #F7F7F7; }
+
+.greenSection p {
   color: #F7F7F7; }
 
 .drProfileText {
   padding-top: 30px; }
 
 .drProfile {
-  padding-top: 40px; }
+  padding-bottom: 40px; }
+
+.drPhoto {
+  width: 170px;
+  height: 170px;
+  margin: 30px auto 0px; }
 
 h2 {
-  font-size: 3.5rem;
-  line-height: 3;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-weight: 700;
   text-align: center;
-  color: #125F89; }
+  color: #125F89;
+  font-family: Helvetica, Arial; }
+
+h2.light {
+  color: #F7F7F7; }
+
+.contactRow {
+  margin: 20px 0; }
+
+.map {
+  margin-top: 40px; }
+
+.topImage {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: url(../img/top.jpg) 50% center/cover no-repeat; }
+
+.topIndicator {
+  height: 10px;
+  background-color: #629BDD; }
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  .topImage {
+    height: 250px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  h2 {
+    font-size: 2rem;
+    margin: 4rem 0 3rem 0; }
+  .phoneNumber:first-child {
+    padding-right: 20px; }
+  .contact-top {
+    width: 270px;
+    text-align: center; }
+  .topImage {
+    height: 300px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+    margin: 5rem 0 4rem 0; }
+  .contactContainer {
+    font-size: 1.3em; }
+  .phoneNumber {
+    clear: both; }
+  .topImage {
+    height: 350px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .topImage {
+    height: 400px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 320px) {
+  .contact-top {
+    display: none; } }
+
+@media only screen and (max-width: 575px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px; }
+  .container {
+    margin: 0px; }
+  .container-fluid {
+    padding: 0px; }
+  .contactIcon {
+    width: 30px;
+    height: 30px; }
+  .drPhoto {
+    width: 120px;
+    height: 120px; }
+  .address {
+    margin-left: 70px;
+    margin-top: 40px; } }
