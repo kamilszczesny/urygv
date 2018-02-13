@@ -77,6 +77,8 @@ h3 {
     font-size: 1.3rem;
     color: #629BDD;
     font-weight: 700;
+    text-align: center;
+    margin: 0px auto;
 }
 
 .darkSection {
@@ -199,6 +201,10 @@ h2.light {
 @media only screen and (min-width: 992px) {
     .topImage {
         height: 400px;
+    }
+    .drName {
+        text-align: left;
+        margin: 0px;
     }
 }
 

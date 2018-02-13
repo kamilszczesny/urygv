@@ -6178,7 +6178,9 @@ h3 {
 .drName {
   font-size: 1.3rem;
   color: #629BDD;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center;
+  margin: 0px auto; }
 
 .darkSection {
   background-color: #125F89; }
@@ -6269,7 +6271,10 @@ h2.light {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .topImage {
-    height: 400px; } }
+    height: 400px; }
+  .drName {
+    text-align: left;
+    margin: 0px; } }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 320px) {
