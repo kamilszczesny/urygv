@@ -52,6 +52,13 @@ h3 {
     font-size: 1.3rem;
 }
 
+h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: black;
+    margin-left: -20px;
+}
+
 .contactData {
     color: white;
     font-size: 0.9rem;
@@ -85,21 +92,8 @@ h3 {
     background-color: #125F89;
 }
 
-.greenSection {
-    background-color: #02B8BF;
-    margin-top: 40px;
-}
-
-.greenSection h2 {
-    color: white;
-}
-
-.darkSection p {
-    color: #F7F7F7;
-}
-
-.greenSection p {
-    color: #F7F7F7;
+.graySection {
+    background-color: #cccccc
 }
 
 .drProfileText {
@@ -124,9 +118,9 @@ h2 {
     font-weight: 700;
     text-align: center;
     color: #125F89;
-    font-family: Helvetica, Arial;
+    font-family: Work Sans, Helvetica, Arial;
 }
-
+ 
 h2.light {
     color: #F7F7F7;
 }
@@ -157,6 +151,10 @@ h2.light {
 
 .iconPhoto {
     margin: 60px 15px;
+}
+
+.navbar{
+    justify-content: flex-end;
 }
 
 /* Custom, iPhone Retina */
@@ -202,6 +200,9 @@ h2.light {
     .topImage {
         height: 350px;
     }
+    .navbar{
+        justify-content: center;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -218,7 +219,11 @@ h2.light {
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .topImage {
+        background-position: center top;
+    }
+}
 
 @media only screen and (max-width: 320px) {
     .contact-top {
@@ -250,3 +255,28 @@ h2.light {
         margin-top: 40px;
     }
 }
+
+// navbar sticky class
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  .navbarRow.empty {
+      height: 56px;
+  }
+  #navbar {
+      background-color: #F7F7F7;
+      z-index: 1000;
+      flex: 1;
+  }
+  
+  .icons {
+      background-color: #E3EEF4
+  }
+
+  .iconImg {
+      margin: 30px;
+  }
+  
