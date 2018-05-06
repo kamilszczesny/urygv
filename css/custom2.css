@@ -6153,6 +6153,13 @@ a.active {
   width: 120px;
   text-align: center; }
 
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -180px;
+  height: 180px;
+  visibility: hidden; }
+
 h3 {
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
@@ -6170,7 +6177,7 @@ h4 {
   font-weight: 400; }
 
 .phoneNumber {
-  clear: both; }
+  clear: none; }
 
 .contactHeader {
   font-size: 0.8rem; }
@@ -6225,6 +6232,7 @@ h2.light {
   margin-top: 40px; }
 
 .topImage {
+  position: relative;
   display: block;
   width: 100%;
   height: 200px;
@@ -6244,20 +6252,11 @@ h2.light {
   justify-content: flex-end; }
 
 #slideshow {
-  margin: 50px auto;
   position: absolute;
   right: 0px;
-  bottom: 250px;
-  width: 240px;
-  height: 240px;
-  padding: 10px; }
-
-#slideshow > div {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px; }
+  bottom: 10px;
+  width: 120px;
+  height: 120px; }
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
@@ -6285,7 +6284,7 @@ h2.light {
   .contactContainer {
     font-size: 1.3em; }
   .phoneNumber {
-    clear: both; }
+    clear: none; }
   .topImage {
     height: 350px; }
   .navbar {
@@ -6303,7 +6302,13 @@ h2.light {
 @media only screen and (min-width: 1200px) {
   .topImage {
     background-position: center top;
-    height: 500px; } }
+    height: 500px; }
+  .iconImg {
+    width: 144px;
+    height: 168px; }
+  #slideshow {
+    width: 160px;
+    height: 180px; } }
 
 @media only screen and (min-width: 1500px) {
   .topImage {
@@ -6312,7 +6317,20 @@ h2.light {
 
 @media only screen and (max-width: 320px) {
   .contact-top {
-    display: none; } }
+    display: none; }
+  .topImage {
+    height: 200px; }
+  .iconImg {
+    width: 80px;
+    height: 90px; }
+  #slideshow {
+    width: 90px;
+    height: 90px; } }
+
+@media only screen and (max-width: 480px) {
+  .phoneNumber {
+    clear: both;
+    display: block; } }
 
 @media only screen and (max-width: 575px) {
   .row {
@@ -6349,4 +6367,21 @@ h2.light {
   background-color: #E3EEF4; }
 
 .iconImg {
-  margin: 30px; }
+  margin: 0px; }
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+.showing {
+  opacity: 1;
+  z-index: 2; }
